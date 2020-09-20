@@ -1,0 +1,6 @@
+framework module Pods_Twitter_Analysis_Twitter_AnalysisUITests {
+  umbrella header "Pods-Twitter Analysis-Twitter AnalysisUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
