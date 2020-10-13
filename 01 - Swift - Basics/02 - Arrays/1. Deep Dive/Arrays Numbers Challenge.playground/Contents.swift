@@ -18,3 +18,9 @@ for i in 0...3{
     
 print("The New Numbers: \n\(computedNumbers)")
 
+
+//SETS v. Arrays
+
+var set: Set = [0,1,2]
+
+//Sets are not ordered and the values have to be unique
