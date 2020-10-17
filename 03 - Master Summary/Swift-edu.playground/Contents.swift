@@ -160,10 +160,11 @@ if UTClass == .mis{
 }else{
     print("Anything else")
 }
+//Output: Anything else
 
 //Ternery Operator
 print(UTClass == .cs ? "Coding" : "Something Else")
-
+//Output: Something else
 
 //Switch Statements
 switch UTClass {
