@@ -10,7 +10,7 @@ let constant = "Constant"
 variable += " are mutable"
 //variable = "Variables are mutable"
 
-constant += "are immutable"
+//constant += "are immutable"
 //Output: Left side of mutating operator isn't mutable: 'constant' is a 'let' constant
 
 
@@ -160,10 +160,11 @@ if UTClass == .mis{
 }else{
     print("Anything else")
 }
+//Output: Anything else
 
 //Ternery Operator
 print(UTClass == .cs ? "Coding" : "Something Else")
-
+//Output: Something else
 
 //Switch Statements
 switch UTClass {
@@ -172,8 +173,9 @@ switch UTClass {
     case .mis:
         print("MIS")
     default:
-        "Default Value"
+        print("Default Value")
 }
+//Output: Default Value
 
 
 
@@ -213,7 +215,7 @@ print(addedOptional)
 
 //Force Unwrap
 print(optionalValue!)
-Output: Fatal error: Unexpectedly found nil while unwrapping an Optional value: file
+//Output: Fatal error: Unexpectedly found nil while unwrapping an Optional value: file
     //Most unsafe and prone to error
 
 
