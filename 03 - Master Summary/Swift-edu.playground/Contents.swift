@@ -60,11 +60,11 @@ func calculator(n1: Int, n2: Int, calculate: (Int, Int)->Void){
     calculate(n1, n2)
 }
 //Closure
-calculator(n1: 8, n2: 9) { (num1, num2)  in
-    print( num1 + num2 )
+calculator(n1: 10, n2: 0) { (num1, num2) in
+    print(num1 + num2)
 }
 //press enter on (Int,Int)->Void
-//Output: 17
+//Output: 10
 
 
 
@@ -214,7 +214,7 @@ print(addedOptional)
 
 
 //Force Unwrap
-print(optionalValue!)
+//print(optionalValue!)
 //Output: Fatal error: Unexpectedly found nil while unwrapping an Optional value: file
     //Most unsafe and prone to error
 
@@ -234,7 +234,7 @@ if let unwrapped = optionalValue{
 
 
 //Guard let else
-guard let notNil = optionalValue else{fatalError("Found Nil")}
+//guard let notNil = optionalValue else{fatalError("Found Nil")}
 //Output: Fatal error: Found Nil: file
 
 
@@ -302,3 +302,15 @@ remyMa.changeName(name: "Those Bird", flying: false)
 eagle.fly()
 remyMa.fly()
 //Output: I'm Flying, Silly! Those Bird's can't fly
+
+
+//MARK: - Protocols
+protocol Flying{
+    func canFly()->Bool
+}
+//A function or get/set variable that needs to be in the class/struct that claims it
+
+
+
+//MARK: - Delegates
+//A communication pattern between one class to another, using the protocol keyword
